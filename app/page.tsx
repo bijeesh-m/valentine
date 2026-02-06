@@ -86,6 +86,8 @@ export default function Home() {
     }, 250);
   };
 
+
+
   if (yesPressed) {
     return (
       <div className="flex min-h-screen bg-[#e4e2fe] flex-col items-center justify-center  p-4">
@@ -95,13 +97,16 @@ export default function Home() {
           transition={{ type: "spring", stiffness: 260, damping: 20 }}
           className="text-center p-10  max-w-2xl"
         >
-          <h1 className="text-3xl  capitalize md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 mb-6">
+          <h1 className="text-3xl  playfair-display  md:text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 mb-6">
             Yay! I knew you'd say YES! <span className=" text-pink-600 ">❤</span>
           </h1>
           <p className="text-xl md:text-2xl font- text-gray-700 leading-relaxed">
             Happy Valentine's Day! <br />
             see you sooonnn :3
           </p>
+
+            <audio src="/audio2.mp3" autoPlay></audio>
+
           <div className="mt-10 flex justify-center gap-4 text-7xl ">
             <img src="/pengu.gif" alt="pengu" className="w-54 h-54" />
           </div>
@@ -112,7 +117,6 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-rose-100 via-teal-50 to-rose-100 overflow-hidden relative selection:bg-rose-200 font-sans">
-
       {/* Background Decor */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
