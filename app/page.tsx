@@ -105,7 +105,7 @@ export default function Home() {
             see you sooonnn :3
           </p>
 
-            <audio src="/audio2.mp3" autoPlay></audio>
+          <audio src="/audio2.mp3" autoPlay></audio>
 
           <div className="mt-10 flex justify-center gap-4 text-7xl ">
             <img src="/pengu.gif" alt="pengu" className="w-54 h-54" />
@@ -175,6 +175,11 @@ export default function Home() {
             </motion.button>
           </div>
         </motion.div>
+        
+      </div>
+
+      <div className=" text-blue-300 opacity-70 absolute right-5 bottom-5">
+        Crafted By Bijeesh, Software Developer
       </div>
 
     </div>
